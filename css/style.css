@@ -8,10 +8,10 @@
 }
 
 :root{
-    --float-bg-card: rgba(15, 14, 23, 1);
     --float-bg:  rgba(255, 255, 254, 1);
+    --float-bg-card: rgba(15, 14, 23, 1);
     --float-txt-title: rgba(229, 49, 112, 1);
-    --float-txt: rgba(229, 226, 228, 1);
+    --float-txt-card-title: rgba(229, 226, 228, 1);
     --float-txt-mail: rgba(54, 185, 203, 1);
 }
 
@@ -26,7 +26,7 @@ a {
 }
 
 img {
-    height: 80px;
+    max-width:30%;
     vertical-align: middle;
 }
 
@@ -45,12 +45,17 @@ body {
 
 header {
     text-align: center;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 header h1 {
     color: var(--float-txt-title);
     padding-bottom: 1rem;
+}
+
+.row {
+    padding-bottom: 2rem;
 }
 
 .row .col {
@@ -60,8 +65,8 @@ header h1 {
 }
 
 .card-team {
-    color: var(--float-txt);
+    color: var(--float-txt-card-title);
     display: inline-block;
-    padding: 1rem;
+    padding: .5rem;
     vertical-align: middle;
 }
