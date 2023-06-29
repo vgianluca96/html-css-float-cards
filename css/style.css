@@ -1,5 +1,67 @@
+
+/* #region General */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --float-bg-card: rgba(15, 14, 23, 1);
+    --float-bg:  rgba(255, 255, 254, 1);
+    --float-txt-title: rgba(229, 49, 112, 1);
+    --float-txt: rgba(229, 226, 228, 1);
+    --float-txt-mail: rgba(54, 185, 203, 1);
+}
+
+.clearfix {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+a {
+    color: var(--float-txt-mail);
+}
+
+img {
+    height: 80px;
+    vertical-align: middle;
+}
+
+/* #endregion General */
+
+body {
+    background-color: var(--float-bg);
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    color: var(--float-txt-title);
+    padding-bottom: 1rem;
+}
+
+.row .col {
+    width: calc(100% / 3);
+    background-color: var(--float-bg-card);
+    float: left;
+}
+
+.card-team {
+    color: var(--float-txt);
+    display: inline-block;
+    padding: 1rem;
+    vertical-align: middle;
 }
